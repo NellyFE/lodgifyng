@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>LodgifyNG</title>
+  </head>
+
+  <body class="font-worksans sm:w-full">
+    <!-- Nav bar -->
+
+    <nav>
+      <!-- Nav flex -->
+      <div class="flex items-center justify-between mx-2 md:mx-8 py-4">
+        <div>
+          <img
+            src="assets/LODGIFY LOGO 1 1.svg"
+            alt="logo"
+            class="w-28"
+          />
+        </div>
+
+        <!-- Menu items -->
+        <div class="hidden md:flex space-x-8">
+          <a href="" class="">Home</a>
+
+          <a href="feature.html" class="">Features</a>
+
+          <a href="" id ="faqButtonM">FAQs</a>
+
+          <a href="" class="">Learn More</a>
+
+          <a href="" class="">Earn</a>
+        </div>
+
+        <!-- Button -->
+
+        <a
+          href="index.html"
+          class="hidden md:block p-3 px-6 pt-2 text-white bg-[#662D91] rounded font-semibold hover:bg-transparent hover:transition border-2 hover:text-[black] hover:border-[#662D91]"
+          >Join Waitlist
+        </a>
+        <!-- Hamburger icon-->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu  -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="">Home</a>
+          <a href="feature.html">Features</a>
+          <a href="" id="faqButton">FAQs</a>
+          <a href="">Learn More</a>
+          <a href="">Earn</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero">
+      <!-- hero container -->
+
+      <div
+        class="flex flex-col items-center space-y-8 text-center px-2 md:px-6 pt-12 md:pt-24"
+      >
+        <h1 class="font-bold text-2xl md:text-5xl">
+          Improve Your Lifestyle Experience <br />
+
+          With
+          <span class="text-[#662D91]">LodgifyNG</span>
+        </h1>
+
+        <p>
+          LodgifyNG is your all-in-one platform designed to transform the
+          housing <br />
+          and real estate industry in Nigeria.
+        </p>
+
+        <!-- button container -->
+
+        <div class="flex space-x-4 mt-12">
+          <!-- Button -->
+
+          <a
+            href="#"
+            class="md:block p-3 px-6 pt-2 mt-12 rounded-full text-white bg-[#662D91] font-semibold border-2 hover:bg-transparent hover:transition hover:text-[black] hover:border-[#662D91]"
+            >Join Waitlist
+          </a>
+
+          <!-- Button -->
+
+          <a
+            href="#"
+            class=" md:block p-3 px-6 pt-2 mt-12 rounded-full bg-transparent font-semibold hover:bg-[#662D91] hover:transition border-[black] border-2 hover:text-[white] hover:border-transparent"
+            >Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- swiper section -->
+
+    <section>
+      <div class="swiper mySwiper mx-6 p-6">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./assets/Eaily book a hotel at your convenience.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Easily rent a student lodge with lodgifyNG.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Explore our marketplace katlogue.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Find your preferred room-mate.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Rent favourite homes.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Eaily book a hotel at your convenience.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Easily rent a student lodge with lodgifyNG.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Explore our marketplace katlogue.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Find your preferred room-mate.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="./assets/Rent favourite homes.svg"
+              alt=""
+              class="rounded w-96"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start doing section -->
+
+    <section>
+      <div
+        class="flex flex-col px-6 pt-12 justify-center border-b-4 border-[#E0D5E9]"
+      >
+        <h2 class="font-bold text-2xl md:4xl text-[#662D91] text-center">
+          Start doing with LodgifyNG
+        </h2>
+
+        <!-- flex container -->
+        <div class="flex flex-col py-6 md:mx-6 space-y-4">
+
+          <!-- top section -->
+          <div class="flex flex-col md:flex-row sm:gap-6 justify-between">
+            <!-- box 1 -->
+
+            <div
+              class="flex flex-col p-6 gap-4 w-full md:w-1/3 justify-center md:justify-normal items-center md:items-start border border-lighterGray md:border-transparent rounded hover:bg-veryLightGray"
+            >
+              <div>
+                <img src="./assets/Group 7.svg" alt="icon" class="w-20" />
+              </div>
+
+              <h4 class="font-bold">Property Transaction</h4>
+
+              <p>Buy, sell, and Rent/Let apartments, Lodges, Shops etc</p>
+            </div>
+
+            <!-- box 2 -->
+
+            <div
+              class="flex flex-col p-6 gap-4 w-full md:w-1/3 justify-center md:justify-normal items-center md:items-start border border-lighterGray md:border-transparent rounded hover:bg-veryLightGray"
+            >
+              <div>
+                <img src="./assets/Group 6.png" alt="icon" class="w-20" />
+              </div>
+
+              <h4 class="font-bold">Hotel and Rental Booking</h4>
+
+              <p>
+                Book hotel, apartments, event halls and more. Daily, weekly,
+                quarterly, yearly.
+              </p>
+            </div>
+
+            <!-- box 3 -->
+
+            <div
+              class="flex flex-col p-6 gap-4 w-full md:w-1/3 justify-center md:justify-normal items-center md:items-start border border-lighterGray md:border-transparent rounded hover:bg-veryLightGray"
+            >
+              <div>
+                <img src="./assets/Group 8.svg" alt="icon" class="w-20" />
+              </div>
+
+              <h4 class="font-bold">Find-A-Roomie Based on your Preference</h4>
+
+              <p>
+                Connect with like-minded housemates based on your tailored
+                hobbies and preference
+              </p>
+            </div>
+          </div>
+
+          <!-- bottom section -->
+          <div class="flex flex-col md:flex-row sm:gap-6 justify-between">
+            <!-- box 4 -->
+
+            <div
+              class="flex flex-col p-6 gap-4 w-full md:w-1/3 justify-center md:justify-normal items-center md:items-start border border-lighterGray md:border-transparent rounded hover:bg-veryLightGray"
+            >
+              <div>
+                <img src="./assets/Group 9.svg" alt="icon" class="w-20" />
+              </div>
+
+              <h4 class="font-bold">LodiFinance (Lodgifi)</h4>
+
+              <p>
+                Invest in Nigerian real estate through solo property transaction
+                or through Lodgify’s trusted and verified investment platforms.
+              </p>
+            </div>
+
+            <!-- box 5 -->
+
+            <div
+              class="flex flex-col p-6 gap-4 w-full md:w-1/3 justify-center md:justify-normal items-center md:items-start border border-lighterGray md:border-transparent rounded hover:bg-veryLightGray"
+            >
+              <div>
+                <img src="./assets/Group 10.svg" alt="icon" class="w-20" />
+              </div>
+
+              <h4 class="font-bold">Workshop</h4>
+
+              <p>
+                Seek artisans and contractors like carpenters, architect
+                surveyors, plumbers, electricians, welders, etc through our
+                workshop features.
+              </p>
+            </div>
+
+            <!-- box 6 -->
+
+            <div
+              class="flex flex-col p-6 gap-4 w-full md:w-1/3 justify-center md:justify-normal items-center md:items-start border border-lighterGray md:border-transparent rounded hover:bg-veryLightGray"
+            >
+              <div>
+                <img src="./assets/Group 11.svg" alt="icon" class="w-20" />
+              </div>
+
+              <h4 class="font-bold">LodgiMart (Marketplace)</h4>
+
+              <p>
+                Explore our marketplace, for housing-related products, like
+                kitchen utensils, appliances etc
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About lodgify section -->
+    <section>
+      <!-- flex container -->
+
+      <div class="flex flex-col justify-center items-center pt-12 pb-8">
+        <h2 class="font-bold text-4xl text-[#662D91] text-center">
+          About LodgifyNG
+        </h2>
+
+        <p>Learn more about lodgifyNG and our services.</p>
+
+        <!-- YouTube Div -->
+        <div class="relative w-1/2 py-8">
+          <a href="#">
+            <img
+              src="assets/medium-shot-man-living-as-digital-nomad 1.svg"
+              alt="man"
+              class="w-full"
+            />
+          </a>
+
+          <!-- YouTube Icon -->
+          <a href="">
+            <img
+              src="assets/Youtube video icon.svg"
+              alt="icon"
+              class="w-12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Earn points section -->
+
+    <section>
+      <!-- flex container -->
+      <div class="flex flex-col text-center mx-6 py-6 ">
+        <h2 class="font-bold text-4xl text-[#662D91]">
+          Earn Points and Unlock Rewards
+        </h2>
+
+        <p class="py-6 md:px-52">
+          Jump into the action by completing simple tasks and earning points!
+          These points
+          convert to LodgiCoin, unlocking exclusive items, products, and
+          services after launch.
+        </p>
+
+        <div class="flex p-6">
+          <img src="assets/Group 69.svg" alt="woman" />
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section class="border-b-4 border-lightPurple">
+
+      <div class="flex flex-col md:flex-row justify-between mx-6 py-8 px-6 items-center">
+        <!-- text side -->
+        <div class="flex w-full sm:text-center sm:justify-center md:w-1/2">
+          <p>
+            Join over 200 users on our waitlist and be among <br />
+            the first to experience LodgifyNG at launch!
+          </p>
+        </div>
+
+        <!-- image side -->
+        <div class="flex flex-col space-y-4 justify-end mr-4">
+          <div class="flex">
+            <p>Over <span class="text-darkPurple">200+</span> users joined</p>
+          </div>
+          <div class="flex">
+            <img
+              src="assets/istockphoto-1194465573-612x612.svg"
+              alt="lady "
+              class="w-24 relative z-30"
+            />
+            <img
+              src="assets/istockphoto-1369508766-612x612.svg"
+              alt="lady "
+              class="w-24 relative z-20 -ml-4"
+            />
+            <img
+              src="assets/istockphoto-1207856385-612x612.png"
+              alt="lady "
+              class="w-24 relative z-10 -ml-4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted providers section -->
+    <section>
+      <div class="flex flex-col mx-6 p-6 justify-center">
+        <h3 class="font-bold text-3xl text-center">
+          Our Trusted Service Providers
+        </h3>
+        <div class="grid grid-cols-2 pt-8 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 items-center">
+          <img src="assets/fdd designs png 2 1.svg" alt="logo" class="w-28" />
+          <img src="assets/ELYONITE  N 1.svg" alt="logo" class="w-28" />
+          <img src="assets/Group 76.svg" alt="logo" class="w-28" />
+          <img src="assets/FB_IMG_1722436594509-removebg-preview (1) 1.svg" alt="logo" class="w-28" />
+          <img src="assets/Dynamologo 1.svg" alt="logo" class="w-28" />
+        </div>
+              </div>
+    </section>
+
+    <!-- what partners say section -->
+
+    <section>
+      <div class="flex flex-col mx-6 py-8 px-6">
+        <h2 class="font-bold text-darkPurple text-4xl text-center">
+          See what our partners say about us
+        </h2>
+
+        <p class="text-center">Feedback from Our Valued Partners</p>
+
+        <div class="flex flex-col md:flex-row justify-between p-4 items-center py-6 md:space-x-6 space-y-8 ">
+         
+          <!-- card 1 -->
+          <div
+            class="w-full md:w-1/3 p-4 rounded border-2 border-lightPurple h-fit hover:bg-darkPurple hover:border-darkPurple group"
+          >
+            <p class="group-hover:text-white">
+              "Dynamo Group Ltd partners with LodgifyNG, transforming Nigeria’s
+              real estate with innovation, transparency and user experience".
+            </p>
+
+            <p class="text-darkPurple mt-6 group-hover:text-white">
+              -Dynamo Group HR.
+            </p>
+          </div>
+
+          <!-- card 2 -->
+
+          <div
+            class="w-full md:w-1/3 p-4 rounded border-2 border-lightPurple h-fit hover:bg-darkPurple hover:border-darkPurple group"
+          >
+            <p class="group-hover:text-white">
+              "LodgifyNG is transforming real estate in Nigeria, partnering to
+              make it easier for people to find and create spaces they love".
+            </p>
+
+            <p
+              class="text-darkPurple mt-6 group-hover:text-white hover:text-white"
+            >
+              -Frances Clement, CEO FDD Designs
+            </p>
+          </div>
+
+          <!-- card 3 -->
+
+          <div
+            class="w-full md:w-1/3 p-4 rounded border-2 border-lightPurple h-fit hover:bg-darkPurple hover:border-darkPurple group"
+          >
+            <p class="group-hover:text-white">
+              "LodgifyNG is a platform where everything related to interior and
+              exterior design will thrive. It’s a trusted platform where what
+              you order is exactly what you get."
+            </p>
+
+            <p class="text-darkPurple group-hover:text-white">
+              -Onyeogalu Chidozie Emmanuel, Elyonite Interiors
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="bg-veryLightGray" id="faqSection">
+      <div class="flex flex-col justify-center mx-2 md:mx-6 p-6">
+        <h2 class="font-bold text-3xl md:text-4xl text-center text-darkPurple">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-center">Answers to Frequently Asked Questions</p>
+
+        <!-- question conatiner -->
+        <div class="flex flex-col py-6 mx-2 md:mx-6 questions">
+          <ul id="faq-ul" class="space-y-6">
+            <!-- question 1 -->
+            <li
+              id="location"
+              class="flex flex-col font-bold border border-lighterGray cursor-pointer bg-white rounded"
+            >
+              <div class="question-row flex p-4 justify-between rounded">
+                What is LodgifyNG? <i class="fa-solid fa-plus"></i>
+              </div>
+              <div
+                class="answer flex p-4 items-center justify-between border-t border-lighterGray font-light hidden"
+              >
+                LodgifyNG is a comprehensive platform that provides a wide range
+                of real estate and housing services, making it easy for users to
+                buy, rent, invest, and manage properties in Nigeria.
+
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </li>
+
+            <!-- question 2 -->
+            <li
+              id="location"
+              class="flex flex-col font-bold border border-lighterGray cursor-pointer bg-white rounded"
+            >
+              <div class="question-row flex p-4 justify-between rounded">
+                What Services Does LodgifyNg Offer?
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div
+                class="answer flex hidden p-4 justify-between border-t border-lighterGray font-light"
+              >
+                Lodgify offers, real estate services, market place,
+                artisan services etc.
+
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </li>
+
+            <!-- question 3 -->
+            <li
+              id="location"
+              class="flex flex-col font-bold border border-lighterGray cursor-pointer bg-white rounded"
+            >
+              <div class="question-row flex p-4 justify-between rounded">
+                Does Lodgify Offer Customer Support?
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div
+                class="answer flex hidden p-4 justify-between border-t border-lighterGray font-light"
+              >
+                Yes, Lodgify offers customer support.
+
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </li>
+
+            <!-- question 4 -->
+            <li
+              id="location"
+              class="flex flex-col font-bold border border-lighterGray cursor-pointer bg-white rounded"
+            >
+              <div class="question-row flex p-4 justify-between rounded">
+                Can I Become a Vendor On the LodgiMart MarketPlace?
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div
+                class="answer flex hidden p-4 justify-between border-t border-lighterGray font-light"
+              >
+                Yes, you can become a vendor on the LodgiMart marketPlace.
+
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </li>
+
+            <!-- question 5 -->
+            <li
+              id="location"
+              class="flex flex-col font-bold border border-[grey] cursor-pointer bg-white rounded"
+            >
+              <div class="question-row flex p-4 justify-between rounded">
+                Can I Book Hotels Through LodgifyNG?
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div
+                class="answer flex hidden p-4 justify-between border-t border-very font-light"
+              >
+                Yes, you book hotels through LodgifyNG.
+
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN section -->
+
+    <section>
+      <div
+        class="rocket flex flex-col mx-6 md:mx-12 my-6 rounded-3xl pt-8 md:pt-14 justify-center items-center text-white"
+      >
+        <h2 class="font-bold text-3xl md:text-4xl text-center">Count-down to Web Product Launch</h2>
+
+        <!-- time flex conatiner -->
+        <div class="flex gap-2 md:gap-4 py-6">
+          <div class="flex flex-col justify-items-center items-center">
+            <h1 class="font-bold text-3xl md:text-5xl">30</h1>
+            <p>DAYS</p>
+          </div>
+
+          <p class="font-bold text-4xl mt-[1px]">:</p>
+
+          <div class="flex flex-col justify-items-center items-center">
+            <h1 class="font-bold text-3xl md:text-5xl">05</h1>
+            <p>HOURS</p>
+          </div>
+
+          <p class="font-bold text-4xl mt-[1px]">:</p>
+
+          <div class="flex flex-col justify-items-center items-center">
+            <h1 class="font-bold text-3xl md:text-5xl">12</h1>
+            <p>MINUTES</p>
+          </div>
+
+          <p class="font-bold text-4xl mt-[1px]">:</p>
+
+          <div class="flex flex-col justify-items-center items-center">
+            <h1 class="font-bold text-3xl md:text-5xl">52</h1>
+            <p>SECONDS</p>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img src="assets/Rocket.svg" alt="rocket" class="hidden md:block"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist section -->
+    <section>
+      <div class="flex flex-col justify-items-center items-center py-8 mx-6 md:mx-20">
+        <h2 class="font-bold text-4xl text-center text-darkPurple">
+          Join Our Waitlist
+        </h2>
+        <p class="text-center">
+          Be the First to Know When We Are Ready! Join the waitlist to Earn
+          50,000 points
+        </p>
+
+        <div class="flex flex-col py-6 w-full">
+          <!-- form input -->
+
+          <form action="post" class="w-full">
+            <div class="flex flex-col md:flex-row justify-between space-y-6 md:space-x-8 my-6 w-full">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="p-4 w-full md:w-1/2 border outline-none rounded-xl border-lighterGray"
+              />
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="p-4 w-full md:w-1/2 border outline-none rounded-xl border-lighterGray"
+              />
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between space-y-6 md:space-x-8 my-6 w-full">
+              <select
+              class="p-4 w-full md:w-1/2 border outline-none rounded-xl border-lighterGray"
+              >
+                <option
+                  value="all"
+                  disabled
+                  selected
+                  class="text-textColor my-2"
+                >
+                  Gender
+                </option>
+
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+
+              <select
+              class="p-4 w-full md:w-1/2 border outline-none rounded-xl border-lighterGray"
+              >
+                <option
+                  value="all"
+                  disabled
+                  selected
+                  class="text-textColor my-2"
+                >
+                  Role in Community
+                </option>
+
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+                <option value="employer">Employer</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between space-y-6 md:space-x-8 my-6 w-full">
+              <select
+              class="p-4 w-full md:w-1/2 border outline-none rounded-xl border-lighterGray"
+              >
+                <option
+                  value="all"
+                  disabled
+                  selected
+                  class="text-textColor my-2"
+                >
+                  Marital Status
+                </option>
+
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+              </select>
+              
+
+              <select
+              class="p-4 w-full md:w-1/2 border outline-none rounded-xl border-lighterGray"
+              >
+                <option
+                  value="all"
+                  disabled
+                  selected
+                  class="text-textColor my-2"
+                >
+                  Age Grade
+                </option>
+
+                <option value="single">15 - 20</option>
+                <option value="married">21 - 30</option>
+                <option value="married">31 - 40</option>
+                <option value="married">41 and above</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <!-- Button -->
+
+        <a
+          href="#"
+          class="md:block p-3 px-6 pt-2 rounded text-white bg-[#662D91] font-semibold hover:bg-transparent hover:transition border-2 hover:text-[black] hover:border-[#662D91]"
+          >Join Waitlist
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <section class="bg-black">
+        <!-- flex container -->
+
+        <div class="flex flex-col md:flex-row mx-8 py-8 text-white items-center justify-between">
+          <!-- the sections inside the div -->
+
+          <div class="flex flex-col w-full md:w-1/4 px-6 h-44">
+            <h4 class="font-bold mb-4">About Us</h4>
+            <p>
+              LodgifyNG is dedicated to creating a safe and accessible haven for
+              all your housing and real estate needs, ensuring convenience and
+              efficiency for users across Nigeria.
+            </p>
+          </div>
+
+          <span class="flex w-full md:w-1/4">
+
+          <div class="flex flex-col w-full md:w-1/2 px-6 h-44">
+            <h4 class="font-bold mb-4">Quick Links</h4>
+            <ul>
+              <li>Home</li>
+              <li>Features</li>
+              <li>Learn More</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col w-full md:w-1/2 px-6 h-44">
+            <h4 class="font-bold mb-4">Get in Touch</h4>
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-envelope"></i>
+              <p>lodgifyng@gmail.com</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i>
+              <p>08138469949</p>
+            </div>
+          </div>
+
+        </span>
+
+          <div class="flex flex-col px-6 h-44 w-full md:w-1/4">
+            <h4 class="font-bold mb-4">Stay Connected</h4>
+            <p>Enter your details below to subscribe to our newsletter.</p>
+
+            <div class="flex gap-2 items-center mt-2">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="p-2 rounded w-2/3"
+              />
+              <!-- Button -->
+
+              <a
+                href="#"
+                class="md:block p-2 px-6 pt-2 rounded text-white bg-[#662D91] font-semibold hover:bg-transparent hover:transition border-2 border-black hover:border-[#662D91]"
+                >Send
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

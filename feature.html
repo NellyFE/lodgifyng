@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>features</title>
+  </head>
+
+  <body class="font-worksans">
+    <!-- Nav bar -->
+
+    <nav>
+      <!-- Nav flex -->
+      <div class="flex items-center justify-between mx-2 md:mx-8 py-4">
+        <div>
+          <img
+            src="assets/LODGIFY LOGO 1 1.svg"
+            alt="logo"
+            class="w-20 md:w-28"
+          />
+        </div>
+
+        <!-- Menu items -->
+        <div class="hidden md:flex space-x-8">
+          <a href="" class="">Home</a>
+
+          <a href="feature.html" class="">Features</a>
+
+          <a href="" class=" ">FAQs</a>
+
+          <a href="" class="">Learn More</a>
+
+          <a href="" class="">Earn</a>
+        </div>
+
+        <!-- Button -->
+
+        <a
+          href="index.html"
+          class="hidden md:block p-3 px-6 pt-2 text-white bg-[#662D91] rounded font-semibold hover:bg-transparent hover:transition border-2 hover:text-[black] hover:border-[#662D91]"
+          >Join Waitlist
+        </a>
+
+        <!-- Hamburger icon-->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu  -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="">Home</a>
+          <a href="feature.html">Features</a>
+          <a href="">FAQs</a>
+          <a href="">Learn More</a>
+          <a href="">Earn</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero" class="justify-center items-center justify-items-center">
+      <!-- hero container -->
+
+      <div
+        class="flex flex-col items-center py-24 justify-center border-b-8 border-lightPurple space-y-8 text-center px-6 md:px-52 pt-12 md:pt-2"
+      >
+        <!-- Button -->
+
+        <a
+          href="#"
+          class="md:block p-3 px-6 pt-2 mt-12 rounded-full bg-transparent font-semibold text-darkPurple hover:bg-[#662D91] hover:transition border-darkPurple border-2 hover:text-[white] hover:border-transparent"
+          >About Us
+        </a>
+
+        <h1 class="font-bold text-2xl md:text-4xl">
+          LodgifyNG is a Platform For Transforming the Real Estate and
+
+          <span class="text-[#662D91]"> Housing Industry</span>
+        </h1>
+
+        <p>
+          Our mission is to create a seamless, comprehensive platform that
+          empowers users to access all real estate and housing services at the
+          tap of a finger. With a deep understanding of the local market and a
+          commitment to innovation, we aim to transform how Nigerians buy, rent,
+          invest in, and manage properties.
+        </p>
+      </div>
+    </section>
+
+    <!-- Key Features section -->
+
+    <section class="border-b-8 border-lightPurple">
+      <!-- container -->
+
+      <div class="flex flex-col mx-2 md:mx-6 px-2 md:px-6 py-8 items-center">
+        <h2 class="font-bold text-4xl text-darkPurple text-center">
+          Key Features of LodgifyNG
+        </h2>
+
+        <!-- first box -->
+        <div
+          class="flex flex-col px-6 py-12 my-6 space-y-6 w-full border-2 border-lighterGray rounded-xl"
+        >
+          <!-- child box 1 -->
+          <div class="flex p-6 sm:p-2 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b>Property Transactions:</b> Users can Buy, sell, rent, or let
+              lands, apartments, offices, and shops all through our streamlined
+              platform.
+            </p>
+          </div>
+
+          <!-- child box 2 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b> Hotel & Rental Booking:</b> Users can Book hotels, motels,
+              apartments, event halls, and other spaces with ease.
+            </p>
+          </div>
+
+          <!-- child box 3 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b>Find-A-Roomie:</b> Users can Match with living partners
+              (roommates) based on shared interests and preferences, making
+              shared living easier and more enjoyable.
+            </p>
+          </div>
+
+          <!-- child box 4 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b> Shared Living:</b> Unlock additional shared living features by
+              gaining a roomie badge after successful roomie matching. These
+              features enhance the shared living experience with activities,
+              rewards and tools to help ease the challenges of cohabitation.
+            </p>
+          </div>
+        </div>
+
+        <!-- second box -->
+        <div
+          class="flex flex-col px-6 py-12 my-6 space-y-6 w-full border-2 border-lighterGray rounded-xl"
+        >
+          <!-- child box 1 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b>LodgiMove:</b> Users can Get access to reliable moving services
+              and logistics for hassle-free relocations, with options for
+              delivery of all purchases made on our platform.
+            </p>
+          </div>
+
+          <!-- child box 2 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b> Hotel & Rental Booking:</b> LodgiFinance (LodgiFi): i Real
+              Estate Crowdfunding (L-REC): Users can Participate in or start
+              crowdfunding projects to develop real estate initiatives.
+            </p>
+          </div>
+
+          <!-- child box 3 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b>ii. Real Estate Investment Trust (L-REIT):</b> Users can Invest
+              in real estate by purchasing shares in properties owned by
+              LodgifyNG, making property ownership more accessible.
+            </p>
+          </div>
+
+          <!-- child box 4 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b> Own2Let & Own2Use:</b> Users can Opt for properties with the
+              flexibility to buy for personal use or as rental investments,
+              where we can offer our professional property management services.
+            </p>
+          </div>
+        </div>
+
+        <!-- see more Features section -->
+
+        <div class="flex items-center gap-2 text-darkPurple w-full justify-end" id="seemore">
+          <p class="font-semibold cursor-pointer">See all Features</p>
+          <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+        </div>
+
+        <!-- Third box -->
+        <div
+          id="feature1"
+          class="hidden flex flex-col px-6 py-12 my-6 space-y-6 w-full border-2 border-lighterGray rounded-xl"
+        >
+          <!-- child box 1 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b>Pimp My Space (PMS):</b> Users can Access top-tier interior
+              design, decoration, construction and renovation services for
+              homes, offices, and more.
+            </p>
+          </div>
+
+          <!-- child box 2 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b> LodgiMart:</b> Users can Access a marketplace for
+              housing-related goods, where users can buy, sell, and even become
+              vendors for items like furniture, decor, and appliances.
+            </p>
+          </div>
+
+          <!-- child box 3 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b>Agent Portal:</b> We provide real estate agents with their own
+              back-office tools to manage and update their property listings
+              seamlessly and simplify house rent collecting
+            </p>
+          </div>
+
+          <!-- child box 4 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b> Landlord Portal:</b> We empower landlords to manage properties
+              and gain financial insights into their portfolios.
+            </p>
+          </div>
+        </div>
+
+        <!-- Fourth box -->
+        <div
+          id="feature2"
+          class="hidden flex flex-col px-6 py-12 my-6 space-y-6 w-full border-2 border-lighterGray rounded-xl"
+        >
+          <!-- child box 1 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b>LodgifyNG Academy:</b> Users can Access educational resources
+              and expert consultation on real estate investment.
+            </p>
+          </div>
+
+          <!-- child box 2 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b> Lodgicurrency:</b> Our in-app currency system, allowing users
+              to transact easily using LodgiCash, with the potential to earn
+              rewards through LodgiCoin for referrals, engagement, and
+              completing tasks.
+            </p>
+          </div>
+
+          <!-- child box 3 -->
+          <div class="flex p-6 mx-2 md:mx-6 border border-lighterGray rounded-xl">
+            <p>
+              <b>Workshop:</b> Users can Find and hire professional
+              housing-related artisans like carpenters, plumbers, electricians,
+              painters, welders, and more for quality, reliable home services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why lodify section  -->
+    <section>
+      <div class="flex flex-col items-center mx-8 py-12">
+        <h2 class="font-bold text-4xl text-darkPurple">Why LodgifyNG?</h2>
+
+        <!-- the grids -->
+        <div class="flex flex-col md:flex-row justify-between p-8 space-y-6 md:space-y-0">
+          <img src="assets/Trust and Security.svg" alt="" class="w-full md:w-[49%]" />
+          <img
+            src="assets/Affordability and Inclusivity.svg"
+            alt=""
+            class="w-full md:w-[49%]"
+          />
+        </div>
+
+        <!-- the grids -->
+        <div class="flex flex-col md:flex-row justify-between p-8 space-y-6 md:space-y-0">
+          <img src="assets/Efficiency.svg" alt="" class="w-full md:w-[49%]" />
+          <img src="assets/Convenience.svg" alt="" class="w-full md:w-[49%]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Join section  -->
+
+    <section class="pb-12">
+      <div
+        class="rocket flex flex-col mx-16 my-6 rounded-3xl  py-8 md:py-14 px-6 md:px-48 justify-between gap-6 items-center text-white"
+      >
+        <h2 class="font-bold text-sm md:text-3xl text-center">
+          Join LodgifyNG and access all real estate and housing services at the
+          tap of a your finger
+        </h2>
+
+        <!-- Button -->
+
+        <a
+          href="index.html"
+          class="md:block p-3 px-6 pt-2 text-darkPurple bg-white rounded font-semibold hover:transition border-2 hover:border-[#662D91]"
+          >Join Waitlist
+        </a>
+      </div>
+    </section>
+
+    <footer>
+        <section class="bg-black">
+          <!-- flex container -->
+  
+          <div class="flex flex-col md:flex-row mx-8 py-8 text-white items-center justify-between">
+            <!-- the sections inside the div -->
+  
+            <div class="flex flex-col w-full md:w-1/4 px-6 h-44">
+              <h4 class="font-bold mb-4">About Us</h4>
+              <p>
+                LodgifyNG is dedicated to creating a safe and accessible haven for
+                all your housing and real estate needs, ensuring convenience and
+                efficiency for users across Nigeria.
+              </p>
+            </div>
+  
+            <span class="flex w-full md:w-1/4">
+  
+            <div class="flex flex-col w-full md:w-1/2 px-6 h-44">
+              <h4 class="font-bold mb-4">Quick Links</h4>
+              <ul>
+                <li>Home</li>
+                <li>Features</li>
+                <li>Learn More</li>
+              </ul>
+            </div>
+  
+            <div class="flex flex-col w-full md:w-1/2 px-6 h-44">
+              <h4 class="font-bold mb-4">Get in Touch</h4>
+              <div class="flex items-center gap-2">
+                <i class="fa-regular fa-envelope"></i>
+                <p>lodgifyng@gmail.com</p>
+              </div>
+  
+              <div class="flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>08138469949</p>
+              </div>
+            </div>
+  
+          </span>
+  
+            <div class="flex flex-col px-6 h-44 w-full md:w-1/4">
+              <h4 class="font-bold mb-4">Stay Connected</h4>
+              <p>Enter your details below to subscribe to our newsletter.</p>
+  
+              <div class="flex gap-2 items-center mt-2">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="p-2 rounded w-2/3"
+                />
+                <!-- Button -->
+  
+                <a
+                  href="#"
+                  class="md:block p-2 px-6 pt-2 rounded text-white bg-[#662D91] font-semibold hover:bg-transparent hover:transition border-2 border-black hover:border-[#662D91]"
+                  >Send
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    
+      <script src="script.js"></script>
+  </body>
+</html>
