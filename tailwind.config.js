@@ -16,12 +16,11 @@ module.exports = {
       },
 
       colors: {
-        veryLightGray: 'hsla(225, 7.40%, 89.40%, 0.39)' ,
-        lighterGray: 'hsla(0, 0.00%, 50.60%, 0.36)' ,
-        darkPurple: 'hsl(275, 52%, 37%)' ,
-        lightPurple: 'hsl(280, 30%, 87%)'
-
-      }
+        veryLightGray: "hsla(225, 7.40%, 89.40%, 0.39)",
+        lighterGray: "hsla(0, 0.00%, 50.60%, 0.36)",
+        darkPurple: "hsl(275, 52%, 37%)",
+        lightPurple: "hsl(280, 30%, 87%)",
+      },
     },
   },
   plugins: [],
