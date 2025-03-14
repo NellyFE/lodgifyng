@@ -54,8 +54,57 @@ const hiddenFeaturesecond = document.getElementById("feature2");
 const seeMore = document.getElementById("seemore");
 
 const faqButton = document.getElementById("faqButton");
-const faqButtonm = document.getElementById('faqButtonM')
+const faqButtonm = document.getElementById("faqButtonM");
 const faqSection = document.getElementById("faqSection");
+const waitListBtn = document.getElementById("joinwaitlist");
+const heroWaitBtn = document.getElementById("joinwait23");
+const waitListSection = document.getElementById("waitSection");
+const day = document.getElementById("days");
+const hours = document.getElementById("hours");
+const minutes = document.getElementById("minutes");
+const seconds = document.getElementById("seconds");
+
+//FAQ scroll
+
+if (faqButtonm && faqSection) {
+  faqButtonm.addEventListener("click", (e) => {
+    e.preventDefault();
+    faqSection.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+if (faqButton && faqSection) {
+  faqButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    faqSection.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+//Waitlist scroll
+if (waitListBtn && waitListSection) {
+  waitListBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    waitListSection.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+if (heroWaitBtn && waitListSection) {
+  heroWaitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("hey");
+
+    waitListSection.scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+if (seeMore) {
+  seeMore.addEventListener("click", () => {
+    console.log("clicked");
+    hiddenFeatureFirst.style.display = "block";
+    hiddenFeaturesecond.style.display = "block";
+    seeMore.style.display = "none";
+  });
+}
 
 // if(faqButton){
 // faqButton.addEventListener("click", () => {
@@ -66,30 +115,31 @@ const faqSection = document.getElementById("faqSection");
 //   });
 // });
 
-// }
+// }'
 
-if (faqButtonm && faqSection) {
-  faqButtonm.addEventListener("click", (e) => {
-    e.preventDefault()
-    faqSection.scrollIntoView({ behavior: "smooth" });
-  });
-  
-}
+let totalSecondsLeft =
+  JSON.parse(window.localStorage.getItem("time-left")) || 30 * 24 * 60 * 60; // 30 days in seconds
+// const currentSecond = new Date()
+// currentSecond.getSecondsi
 
-if (faqButton && faqSection) {
-  faqButton.addEventListener("click", (e) => {
-    e.preventDefault()
-    faqSection.scrollIntoView({ behavior: "smooth" });
-  });
-  
-}
+const handleCountDown = () => {
+  if (totalSecondsLeft > 0) {
+    totalSecondsLeft -= 1;
 
+    let daysLeft = Math.floor(totalSecondsLeft / 86400);
+    let hoursLeft = Math.floor((totalSecondsLeft % 86400) / 3600); //seconds in hours
+    let minutesLeft = Math.floor((totalSecondsLeft % 3600) / 60);
+    let secondsLeft = totalSecondsLeft % 60;
 
-if (seeMore) {
-  seeMore.addEventListener("click", () => {
-    console.log("clicked");
-    hiddenFeatureFirst.style.display = "block";
-    hiddenFeaturesecond.style.display = "block";
-    seeMore.style.display = "none";
-  });
-}
+    day.innerText = daysLeft;
+    hours.innerText = hoursLeft;
+    minutes.innerText = minutesLeft;
+    seconds.innerText = secondsLeft;
+    window.localStorage.setItem("time-left", totalSecondsLeft);
+  } else {
+    console.log("Countdown finished!");
+    clearInterval(interval); // Stop the timer when it reaches 0
+  }
+};
+
+const interval = setInterval(handleCountDown, 1000);

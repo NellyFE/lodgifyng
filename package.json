@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss -i ./input.css -o ./css/main.css",
-    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch" ,
-    "builds": [{ "src": "index.html", "use": "@vercel/static" }]
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch" 
 
   },
   "keywords": [],
