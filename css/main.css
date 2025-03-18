@@ -1062,6 +1062,10 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #hero{
   background-image: url(../assets/home.svg)!important;
   background-size: cover;
